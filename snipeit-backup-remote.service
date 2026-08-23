@@ -1,0 +1,14 @@
+[Unit]
+Description=Snipe-IT Remote (SSH) Backup Service
+After=network-online.target mariadb.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/snipeit-backup-system/backup-remote.sh
+Restart=on-failure
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Snipe-IT Local Backup Service
+After=network.target mariadb.service
+
+[Service]
+Type=simple
+ExecStart=/opt/snipeit-backup-system/backup-local.sh
+Restart=on-failure
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target
