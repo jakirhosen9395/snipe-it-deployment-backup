@@ -377,22 +377,10 @@ build 24589
 commit gf0bd1f8d76
 ```
 
-Mark the directory safe for Git:
-
-``` bash
-git config --global --add safe.directory /var/www/html/snipe-it
-```
-
-Fetch the exact commit:
-
-``` bash
-git fetch --depth=1 origin gf0bd1f8d76
-```
-
 Checkout:
 
 ``` bash
-git checkout gf0bd1f8d76
+git checkout f0bd1f8d76
 ```
 
 Verify:
