@@ -367,7 +367,7 @@ cd /var/www/html/snipe-it
 
 ------------------------------------------------------------------------
 
-# 13. Fetch and checkout the EXACT original commit
+# 13. Fetch and checkout the EXACT original version
 
 The original installation was:
 
@@ -380,7 +380,7 @@ commit gf0bd1f8d76
 Checkout:
 
 ``` bash
-git checkout f0bd1f8d76
+git checkout v8.7.2
 ```
 
 Verify:
